@@ -1,0 +1,25 @@
+spring:
+  rabbitmq:
+    queue: ms.email
+    addresses: amqps://ADDRESS
+  mail:
+    port: '587'
+    username: '********@gmail.com'
+    host: smtp.gmail.com
+    password: '******************'
+    properties:
+      mail:
+        smtp:
+          auth: 'true'
+          starttls:
+            enable: tru
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jpa:
+    database: MYSQL
+    show-sql: 'true'
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/msemail?createDatabaseIfNotExist=true
